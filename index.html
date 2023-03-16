@@ -14,18 +14,94 @@
 
 <body>
   <header class="header">
-    <div class="header__wrapper">
+    <div class="header__wrapper wrapper">
       <h1 class="header__title">
-        Мое портфолио front-end разработчика
+        Начинающий frontend разработчик
       </h1>
       <nav class="header__nav">
-        <a href="" class="header__link">Обо мне</a>
+        <a href="#about-me" class="header__link">Обо мне</a>
         <a href="" class="header__link">Проекты</a>
         <a href="" class="header__link">Учеба</a>
         <a href="" class="header__link">Контакты</a>
       </nav>
     </div>
   </header>
+  <main>
+    <section class="aboutme" id="about-me">
+      <div class="aboutme__wrapper wrapper">
+        <h2 class="aboutme__title">
+          Обо мне
+        </h2>
+        <div class="aboutme__block">
+          <p class="aboutme__p">
+            Привет! Меня зовут <b>Юрий</b>, и я начинающий фронтенд-разработчик. Я увлекаюсь созданием красивых и
+            функциональных
+            веб-сайтов. У меня хороший уровень знаний HTML и CSS также базовые знания нативного JavaScript.
+          </p>
+          <p class="aboutme__p">
+            Я продолжаю изучать новые технологии и подходы, чтобы улучшить свои навыки и перестать быть начинающим
+            разработчиком и стать профессиональным.
+          </p>
+        </div>
+        <div class="aboutme__block">
+          <p class="aboutme__p">
+            В числе моих навыков:
+          </p>
+          <ul class="aboutme__list">
+            <li class="aboutme__item">
+              * Семантическая верстка, не болею ДИВатозом.
+            </li>
+            <li class="aboutme__item">
+              * Придерживаюсь методологии БЭМ.
+            </li>
+            <li class="aboutme__item">
+              * Понятие о доступности сайта.
+            </li>
+            <li class="aboutme__item">
+              * Адаптивно-фиксировання и адаптивно-резиновая верстка.
+            </li>
+            <li class="aboutme__item">
+              * Препроцессоры SCSS и LESS.
+            </li>
+            <li class="aboutme__item">
+              * Понятие автоматизации и сборки на GULP
+            </li>
+            <li class="aboutme__item">
+              * JavaScript на уровне манипуляции с DOM-элементами, есть понятие о работе с Ajax и Fetch.
+            </li>
+            <li class="aboutme__item">
+              * Базовая работа с Git и Github.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="projects__wrapper">
+        <h2 class="projects__title">
+          Мои Проекты
+        </h2>
+        <div class="projects__block">
+          <div class="projects__card">
+            <a href="https://eazy-life1996.github.io/Pink/" class="projects__link">
+              Pink
+            </a>
+            <div class="projects__inner" data-block>
+              <p class="projects__p">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima maxime officia eum deserunt. Neque fuga,
+                commodi provident eaque exercitationem aliquid voluptates officiis tempore quis sunt magnam nesciunt ut
+                fugit laudantium!
+              </p>
+              <button class="projects__btn" data-btn>
+                Описание проекта
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,120 @@
+.projects {
+  @include paddings;
+  padding-top: 30px;
+  padding-bottom: 250px;
+}
+
+.projects__title {
+  @include titles;
+  color: $text-color-second;
+  margin-bottom: 15px;
+}
+
+.projects__card {
+  position: relative;
+}
+
+.projects__link {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $background-second;
+  color: $text-color;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 15px;
+  position: relative;
+  z-index: 10;
+
+  &:hover {
+    background-color: $hover;
+    transition: ease-in-out 0.3s;
+  }
+
+  &:active {
+    color: rgba($text-color, 0.3);
+    transition: 0s;
+  }
+}
+
+.projects__inner {
+  background-color: $background-third;
+  width: 100%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  left: 0;
+  bottom: -22%;
+  z-index: 5;
+  animation-name: tohidden;
+  transition: ease-in-out 0.5s;
+}
+
+@keyframes drop {
+  from {
+    bottom: -22%;
+  } 
+
+  to {
+    bottom: -105%;
+  }
+}
+
+@keyframes tohidden {
+  from {
+    bottom: -105%;
+  } 
+
+  to {
+    bottom: -22%;
+  }
+}
+
+.projects__inner--open {
+  bottom: -105%;
+  animation-name: drop;
+  transition: ease-in-out 0.5s;
+}
+
+.projects__p {
+  @include text;
+  color: $text-color-second;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 25px;
+  margin-bottom: 10px;
+}
+
+.projects__btn {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  padding-right: 5%;
+  padding-left: 5%;
+  width: 100%;
+  text-align: right;
+  color: $text-color-second;
+  font-size: 15px;
+  font-weight: 700;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+  &:hover {
+    color: $text-color;
+    background-color: $hover-second;
+    transition: ease-in-out 0.3s;
+  }
+
+  &:active {
+    color: rgba($text-color, 0.3);
+    transition: 0s;
+  }
+}
+
+.projects__btn--open {
+
+  &:hover {
+    background-color: $background-third;
+    color: rgba($text-color-second, 0.7);
+  }
+}

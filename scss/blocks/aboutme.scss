@@ -1,0 +1,58 @@
+.aboutme {
+  @include paddings;
+  padding-top: 30px;
+}
+
+.aboutme__title {
+  @include titles;
+  color: $text-color-second;
+  margin-bottom: 15px;
+}
+
+.aboutme__p {
+  @include text;
+  color: $text-color-second;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.aboutme__item {
+  @include text;
+  color: $text-color-second;
+  margin-bottom: 8px;
+  margin-left: 2%;
+}
+
+@media (min-width:$tablet-width) {
+  .aboutme__item {
+    margin-bottom: 10px;
+  }
+
+  .aboutme__p {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width:$laptop-width) {
+  .aboutme {
+    padding-top: 50px;
+  }
+
+  .aboutme__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2%;
+  }
+
+  .aboutme__block {
+    width: 48%;
+  }
+
+  .aboutme__title {
+    width: 100%;
+  }
+}
