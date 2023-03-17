@@ -1,7 +1,6 @@
 .projects {
   @include paddings;
   padding-top: 30px;
-  padding-bottom: 250px;
 }
 
 .projects__title {
@@ -25,6 +24,7 @@
   text-align: center;
   border-radius: 15px;
   position: relative;
+  box-shadow: inset 0 0 30px $text-color-second;
   z-index: 10;
 
   &:hover {
@@ -41,40 +41,19 @@
 .projects__inner {
   background-color: $background-third;
   width: 100%;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 15px;
   position: absolute;
   left: 0;
   bottom: -22%;
   z-index: 5;
   animation-name: tohidden;
-  transition: ease-in-out 0.5s;
-}
-
-@keyframes drop {
-  from {
-    bottom: -22%;
-  } 
-
-  to {
-    bottom: -105%;
-  }
-}
-
-@keyframes tohidden {
-  from {
-    bottom: -105%;
-  } 
-
-  to {
-    bottom: -22%;
-  }
+  transition: ease-in-out;
+  border: 1px solid $text-color-second;
 }
 
 .projects__inner--open {
-  bottom: -105%;
-  animation-name: drop;
-  transition: ease-in-out 0.5s;
+  transition: ease-in-out;
+  z-index: 15;
 }
 
 .projects__p {
@@ -82,17 +61,17 @@
   color: $text-color-second;
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 25px;
-  margin-bottom: 10px;
+  padding-top: 18px;
+  padding-bottom: 5px;
 }
 
 .projects__btn {
-  padding-top: 25px;
+  padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 5%;
   padding-left: 5%;
   width: 100%;
-  text-align: right;
+  text-align: center;
   color: $text-color-second;
   font-size: 15px;
   font-weight: 700;
@@ -100,21 +79,47 @@
   border-bottom-right-radius: 15px;
 
   &:hover {
-    color: $text-color;
-    background-color: $hover-second;
+    color: rgba($text-color-second, 0.8);
     transition: ease-in-out 0.3s;
   }
 
   &:active {
-    color: rgba($text-color, 0.3);
+    color: rgba($text-color-second, 0.3);
     transition: 0s;
   }
 }
 
-.projects__btn--open {
+.projects__block {
+  margin-bottom: 60px;
 
-  &:hover {
-    background-color: $background-third;
-    color: rgba($text-color-second, 0.7);
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width:$tablet-width) {
+  .projects__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .projects__title {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .projects__block {
+    width: 48%;
+  }
+
+  .projects__p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width:$laptop-width) {
+  .projects__block {
+    width: 32%;
   }
 }

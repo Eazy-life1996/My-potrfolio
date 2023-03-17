@@ -19,6 +19,10 @@
   }
 }
 
+.aboutme__block:last-child {
+  margin-top: 10px;
+}
+
 .aboutme__item {
   @include text;
   color: $text-color-second;
@@ -33,6 +37,10 @@
 
   .aboutme__p {
     margin-bottom: 15px;
+  }
+
+  .aboutme__block:last-child {
+    margin-top: 15px;
   }
 }
 
@@ -50,6 +58,10 @@
 
   .aboutme__block {
     width: 48%;
+  }
+
+  .aboutme__block:last-child {
+    margin-top: 0;
   }
 
   .aboutme__title {
