@@ -5,13 +5,11 @@
 
 .aboutme__title {
   @include titles;
-  color: $text-color-second;
   margin-bottom: 15px;
 }
 
 .aboutme__p {
   @include text;
-  color: $text-color-second;
   margin-bottom: 10px;
 
   &:last-child {
@@ -19,15 +17,26 @@
   }
 }
 
-.aboutme__block:last-child {
-  margin-top: 10px;
+.aboutme__subtitle {
+  color: $text-color;
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 300;
 }
 
 .aboutme__item {
   @include text;
-  color: $text-color-second;
   margin-bottom: 8px;
-  margin-left: 2%;
+}
+
+.aboutme__block--background {
+  margin-top: 15px;
+  background-color: $background-third;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 @media (min-width:$tablet-width) {
@@ -35,12 +44,17 @@
     margin-bottom: 10px;
   }
 
-  .aboutme__p {
-    margin-bottom: 15px;
+  .aboutme__block--background {
+    width: 80%;
+    margin-left: auto;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    margin-top: 25px;
   }
 
-  .aboutme__block:last-child {
-    margin-top: 15px;
+  .aboutme__p {
+    margin-bottom: 15px;
+    padding-right: 20%;
   }
 }
 
@@ -60,11 +74,18 @@
     width: 48%;
   }
 
-  .aboutme__block:last-child {
-    margin-top: 0;
+  .aboutme__block--background {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 15px;
+    padding-bottom: 10px;
   }
 
-  .aboutme__title {
-    width: 100%;
+  .aboutme__item {
+    padding-right: 0;
+  }
+
+  .aboutme__block:last-child {
+    margin-top: 0;
   }
 }
