@@ -1,0 +1,53 @@
+.footer__wrapper {
+  @include paddings;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer__link {
+  @include text;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    color: $hover-2;
+  }
+
+  &:active {
+    color: #ffffff;
+  }
+}
+
+.footer__icon {
+  display: block;
+  width: 20px;
+  margin-left: 8px;
+}
+
+.footer__icon path {
+  fill: $text-color;
+}
+
+.footer__link:hover path {
+  fill: $hover-2;
+}
+
+.footer__link:active path {
+  fill: #ffffff;
+}
+
+@media (min-width:$tablet-width) {
+  .footer__link {
+    width: 35%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:$laptop-width) {
+  .footer__link {
+    width: 20%;
+    margin: 0 auto;
+  }
+}

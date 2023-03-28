@@ -1,0 +1,93 @@
+.connect__wrapper {
+  @include paddings;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.connect__title {
+  @include titles;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.connect__block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.connect__social {
+  width: 25%;
+}
+
+.connect__svg {
+  display: block;
+  width: 60px;
+  margin: 0 auto;
+}
+
+.connect__link {
+  @include text;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+
+  &:hover {
+    color: $hover-2;
+  }
+
+  &:active {
+    color: #ffffff;
+  }
+}
+
+.connect__link:hover path{
+  fill: $hover-2;
+}
+
+.connect__link:active path{
+  fill: #ffffff;
+}
+
+.connect__icons {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.connect__icons path {
+  fill: #ffffff;
+}
+
+.connect__svg path {
+  fill: $text-color;
+}
+
+.connect__social:hover path{
+  fill: $hover-2;
+}
+
+@media (min-width:$tablet-width) {
+  .connect__block {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .connect__link {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width:$laptop-width) {
+  .connect__wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .connect__block {
+    width: 40%;
+  }
+}

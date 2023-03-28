@@ -13,13 +13,13 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="totop">
     <div class="header__wrapper wrapper">
       <nav class="header__nav">
         <a href="#about-me" class="header__link">Обо мне</a>
         <a href="#my-projects" class="header__link">Проекты</a>
         <a href="#my-study" class="header__link">Учеба</a>
-        <a href="" class="header__link">Контакты</a>
+        <a href="#my-connect" class="header__link">Контакты</a>
       </nav>
     </div>
   </header>
@@ -84,7 +84,8 @@
             </a>
             <div class="projects__inner" data-block>
               <p class="projects__p">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima maxime officia eum deserunt. Neque fuga,
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima maxime officia eum deserunt. Neque
+                fuga,
                 commodi provident eaque exercitationem aliquid voluptates officiis tempore quis sunt magnam nesciunt ut
                 fugit laudantium!
               </p>
@@ -101,7 +102,8 @@
             </a>
             <div class="projects__inner" data-block>
               <p class="projects__p">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima maxime officia eum deserunt. Neque fuga,
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima maxime officia eum deserunt. Neque
+                fuga,
                 commodi provident eaque exercitationem aliquid voluptates officiis tempore quis sunt magnam nesciunt ut
                 fugit laudantium!
               </p>
@@ -118,7 +120,8 @@
             </a>
             <div class="projects__inner" data-block>
               <p class="projects__p">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima maxime officia eum deserunt. Neque fuga,
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima maxime officia eum deserunt. Neque
+                fuga,
                 commodi provident eaque exercitationem aliquid voluptates officiis tempore quis sunt magnam nesciunt ut
                 fugit laudantium!
               </p>
@@ -135,7 +138,8 @@
             </a>
             <div class="projects__inner" data-block>
               <p class="projects__p">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima maxime officia eum deserunt. Neque fuga,
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima maxime officia eum deserunt. Neque
+                fuga,
                 commodi provident eaque exercitationem aliquid voluptates officiis tempore quis sunt magnam nesciunt ut
                 fugit laudantium!
               </p>
@@ -152,7 +156,8 @@
             </a>
             <div class="projects__inner" data-block>
               <p class="projects__p">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima maxime officia eum deserunt. Neque fuga,
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima maxime officia eum deserunt. Neque
+                fuga,
                 commodi provident eaque exercitationem aliquid voluptates officiis tempore quis sunt magnam nesciunt ut
                 fugit laudantium!
               </p>
@@ -169,7 +174,8 @@
             </a>
             <div class="projects__inner" data-block>
               <p class="projects__p">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima maxime officia eum deserunt. Neque fuga,
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima maxime officia eum deserunt. Neque
+                fuga,
                 commodi provident eaque exercitationem aliquid voluptates officiis tempore quis sunt magnam nesciunt ut
                 fugit laudantium!
               </p>
@@ -187,17 +193,27 @@
           Учеба
         </h2>
         <p class="study__p">
-          Учился я на курсах от онлайн школы "html academy".
-        </p>
-        <p class="study__p">
-          Первый курс, который я прошел, был о базовых основах HTML, CSS и о простой работе с GIT. <br>
-          Второй курс, был о более сложных аспектах верстки, таких как разметка,
-          адаптивный дизайн и создание сайтов с использованием CSS препроцессоров. <br>
-          Третий курс был посвящен базовой работе с JavaScript.
-          Проект сдать не получилось в силу того что не очень подошел формат курса,
-          было сложно совмещать личную жизнь с таким колличеством информации и заданий,
-          но я продолжаю самостоятельное изучения этого языка.
-        </p>
+          Учился я на курсах от онлайн школы "HTML ACADEMY".
+          </p>
+          <div class="study__block study__block--flex">
+            <div class="study__inner-1">
+              <p class="study__p">
+                Первый курс, который я прошел, был о базовых основах HTML, CSS и о простой работе с GIT.
+              </p>
+              <p class="study__p">
+              Второй курс, был о более сложных аспектах верстки, таких как разметка,
+              адаптивный дизайн и создание сайтов с использованием CSS препроцессоров.
+              </p>
+              </div>
+              <div class="study__inner-2">
+                <p class="study__p">
+                  Третий курс был посвящен базовой работе с JavaScript.
+                  Проект сдать не получилось в силу того что не очень подошел формат курса,
+                  было сложно совмещать личную жизнь с таким колличеством информации и заданий,
+                  но я продолжаю самостоятельное изучения этого языка.
+                </p>
+          </div>
+          </div>
         <div class="study__block">
           <img src="img/study-1.jpg" alt="Первый курс" class="study__img">
           <img src="img/study-2.jpg" alt="Второй курс" class="study__img">
@@ -205,7 +221,79 @@
         </div>
       </div>
     </section>
+    <section class="connect" id="my-connect">
+      <div class="connect__wrapper wrapper">
+        <h2 class="connect__title">
+          Контакты
+        </h2>
+        <div class="connect__block-1">
+          <a href="tel:+996555227786" class="connect__link">
+            <svg class="connect__icons" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+              text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+              viewBox="0 0 501.01 511.5">
+              <path fill-rule="nonzero"
+                d="M145.23 241.93c31.31 55.96 68.11 95.64 125.54 125.55 4.98-4.48 7.64-8.17 11.76-13.51 16.29-21.45 36.58-47.2 69.81-31.68 21.68 10.97 64.29 34.03 82.31 47.39 6.86 4.82 11.82 10.9 15.16 17.81 7.09 14.71 6.17 31.58 1.67 46.85-2.32 7.86-5.7 15.65-9.71 22.71-15.05 26.44-40.04 40.23-68.87 47.72-35.05 9.07-66.72 9.32-101.56-1.42-26.29-8.13-50.72-21.27-74.05-35.67l-3.01-1.86c-11.32-7.05-23.48-14.63-35.93-23.89l-.09-.08c-23.99-18.06-48.14-40.28-70.04-65.14-20.28-23.02-38.76-48.46-53.51-75.13-13.52-24.45-23.88-50.13-29.65-76.13-8.21-37.03-7.6-79.66 10.62-113.82 21.33-39.98 60.04-56.32 103.38-52.5l1.07.13c7.49.94 14.3 5.51 17.99 12.11l49.31 83.35c4.82 6.52 7.62 13.23 8.56 20.12 3.59 26.47-18.11 42.75-36.68 56.36-6.33 4.6-13.4 9.73-14.08 10.73zm92.87-52.2c-7.4-1.91-11.85-9.48-9.94-16.88 1.91-7.41 9.48-11.86 16.88-9.94 44.1 11.5 84.18 47.81 97.88 91.55 2.27 7.31-1.8 15.1-9.12 17.37-7.31 2.28-15.1-1.8-17.37-9.12-10.82-34.54-43.55-63.93-78.33-72.98zm1.84-84.95c-7.55-1.28-12.63-8.46-11.35-16.01 1.28-7.55 8.46-12.64 16.01-11.35C329.95 92.2 405.39 164 426.66 247.63c1.89 7.43-2.61 15-10.04 16.89-7.44 1.89-15.01-2.61-16.89-10.05-18.63-73.26-84.98-136.72-159.79-149.69zm8.92-77.11c-7.61-.87-13.08-7.76-12.21-15.37.87-7.6 7.75-13.08 15.36-12.21 118.69 13.89 222.73 108.9 248.67 225.33 1.65 7.47-3.07 14.86-10.53 16.51-7.46 1.65-14.86-3.07-16.5-10.53-23.4-104.98-117.76-191.21-224.79-203.73zM119.56 255c-.47-.77-.88-1.58-1.22-2.44-8.35-21.18 8.78-33.62 24.07-44.7 7.35-5.3 20.15-13.96 23.95-22.75 2.23-5.11 1.15-8.92-2.08-13.27l-1.3-1.85-48.67-82.28c-31.03-2.17-57.86 8.63-73.25 37.45-14.84 27.81-14.58 64.08-7.93 94.08 5.1 23.01 14.5 46.13 26.85 68.47 27.53 49.8 70.27 96.95 115.63 131.16 11.04 8.23 22.87 15.62 33.89 22.48l3.07 1.92c39.75 24.7 82.66 45.09 131.23 37.92 7.42-1.09 14.86-2.47 21.87-4.28 27.72-7.21 49.33-20.63 58.18-50.69 3.15-10.7 4.66-25.46-5.59-32.87-22.42-14.64-54.45-32.46-78.35-45.11-12.33-5.49-24.51 9.95-34.45 23.04-7.16 9.36-14.86 20.05-26.28 24.33-5.6 2.1-11.4 2.04-16.92-.23l-1.86-.79C196.02 361.76 154.37 317.52 119.56 255z" />
+            </svg>
+            +996-555-22-77-86
+          </a>
+          <a href="mailto:Eazylifemusic@gmail.com" class="connect__link">
+            <svg class="connect__icons" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 122.88 122.88">
+              <path
+                d="M61.44,0A61.46,61.46,0,1,1,18,18,61.21,61.21,0,0,1,61.44,0ZM33.29,38.65h56.3a3.65,3.65,0,0,1,3.64,3.64V81a3.57,3.57,0,0,1-.63,2,1.46,1.46,0,0,1-.34.52,1.51,1.51,0,0,1-.34.24,3.7,3.7,0,0,1-2.33.85H33.29a3.63,3.63,0,0,1-2.57-1.07A3.67,3.67,0,0,1,29.65,81V42.29a3.65,3.65,0,0,1,3.64-3.64Zm-.85,40.79L52.17,59.67,32.44,43.58V79.44Zm21.9-18L34,81.83H88.7L69.27,61.44,62.86,66.9h0a1.39,1.39,0,0,1-1.79,0l-6.73-5.48Zm17-1.81,19,20V43.41l-19,16.22ZM34.24,41.44,61.93,64,88.44,41.44Zm68-20.81a57.7,57.7,0,1,0,16.91,40.81,57.5,57.5,0,0,0-16.91-40.81Z" />
+            </svg>
+            Eazylifemusic@gmail.com
+          </a>
+        </div>
+        <div class="connect__block">
+          <a href="#" class="connect__social">
+            <svg class="connect__svg connect__instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 3333"
+              shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality"
+              fill-rule="evenodd" clip-rule="evenodd">
+              <path
+                d="M1667 0c920 0 1667 746 1667 1667 0 920-746 1667-1667 1667C747 3334 0 2588 0 1667 0 747 746 0 1667 0zm-390 752h780c293 0 532 237 532 525v778c0 289-239 525-532 525h-780c-293 0-532-236-532-525v-778c0-289 240-525 532-525zm385 421c285 0 516 231 516 516s-231 516-516 516-516-231-516-516 231-516 516-516zm0 174c188 0 341 153 341 341s-153 341-341 341c-189 0-341-153-341-341s153-341 341-341zm499-246c46 0 84 37 84 84 0 46-37 84-84 84-46 0-84-37-84-84 0-46 37-84 84-84zm-820-200h652c245 0 445 199 445 443v656c0 244-200 443-445 443h-652c-245 0-445-199-445-443v-656c0-244 200-443 445-443z" />
+            </svg>
+          </a>
+          <a href="#" class="connect__social">
+            <svg class="connect__svg connect__telegram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333334 333334"
+              shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality"
+              fill-rule="evenodd" clip-rule="evenodd">
+              <path
+                d="M166667 0c92048 0 166667 74619 166667 166667s-74619 166667-166667 166667S0 258715 0 166667 74619 0 166667 0zm80219 91205l-29735 149919s-4158 10396-15594 5404l-68410-53854s76104-68409 79222-71320c3119-2911 2079-3534 2079-3534 207-3535-5614 0-5614 0l-100846 64043-42002-14140s-6446-2288-7069-7277c-624-4992 7277-7694 7277-7694l166970-65498s13722-6030 13722 3951zm-87637 122889l-27141 24745s-2122 1609-4443 601l5197-45965 26387 20619z" />
+            </svg>
+          </a>
+          <a href="#" class="connect__social">
+            <svg class="connect__svg connect__vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 3333"
+              shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality"
+              fill-rule="evenodd" clip-rule="evenodd">
+              <path
+                d="M1667 0c920 0 1667 746 1667 1667 0 920-746 1667-1667 1667C747 3334 0 2588 0 1667 0 747 746 0 1667 0zm941 1201c14-47 0-81-66-81h-220c-56 0-82 30-96 62 0 0-112 272-270 449-51 51-74 67-102 67-14 0-35-16-35-63v-435c0-56-15-81-62-81h-345c-35 0-56 26-56 50 0 53 79 65 87 214v324c0 71-13 84-41 84-74 0-256-274-363-587-21-61-42-85-98-85H721c-63 0-75 30-75 62 0 58 74 347 347 729 182 261 437 402 670 402 140 0 157-31 157-85v-197c0-63 13-75 57-75 33 0 88 16 219 142 149 149 174 216 257 216h220c63 0 94-31 76-93-20-62-91-151-185-257-51-61-128-126-151-158-33-42-23-61 0-98 0 0 268-377 296-505z" />
+            </svg>
+          </a>
+          <a href="#" class="connect__social">
+            <svg class="connect__svg connect__whatsapp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 3333"
+              shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality"
+              fill-rule="evenodd" clip-rule="evenodd">
+              <path
+                d="M1667 0c920 0 1667 746 1667 1667 0 920-746 1667-1667 1667C747 3334 0 2588 0 1667 0 747 746 0 1667 0zm700 952c-175-175-407-271-655-271-510 0-925 415-925 925 0 163 43 322 124 462l-131 480 491-129c135 74 287 113 442 113 510 0 925-415 925-925 0-247-96-480-271-655zm-654 1424c-138 0-274-37-392-107l-28-17-291 76 78-284-18-29c-77-122-118-264-118-409 0-424 345-769 770-769 205 0 399 80 544 225 145 146 225 338 225 544 0 424-345 770-769 770zm422-576c-23-12-137-67-158-75s-37-12-52 12c-15 23-60 75-73 91-14 15-27 18-50 6s-98-36-186-115c-69-61-115-137-129-160s-2-36 10-47c11-10 23-27 35-41s15-23 23-39c8-15 4-29-2-41s-52-125-71-172c-19-45-38-39-52-40s-29-1-44-1-40 6-62 29c-21 23-81 79-81 193s83 224 94 239c12 15 163 249 395 349 55 24 98 38 132 49 55 17 106 15 146 9 44-7 137-56 156-110s19-100 14-110-21-16-44-28z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer class="footer">
+    <div class="footer__wrapper wrapper">
+      <a href="#totop" class="footer__link">
+        Вернуться на верх
+        <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+          image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 500.21">
+          <path fill-rule="nonzero"
+            d="m365.47 230.11-107.44-16.45c4.33 47.99 15.61 102.01 47.74 147.53 34.78 49.27 94.53 89.1 197.42 101.36 5.47.64 9.38 5.63 8.74 11.1-.49 4.19-3.55 7.48-7.42 8.49-32.9 10.99-63.94 16.63-93.04 17.82-79.53 3.27-144.47-26.45-193.97-70.33-49.14-43.55-83.03-101.16-100.81-154.07-7.33-21.78-11.96-42.86-13.83-61.91l-91.15 16.42c-5.4.96-10.59-2.65-11.55-8.05-.54-3 .33-5.92 2.13-8.1L176.27 3.62c3.5-4.24 9.81-4.84 14.05-1.34l1.17 1.15L374.68 213.7c3.62 4.16 3.18 10.48-.98 14.1-2.34 2.05-5.38 2.79-8.23 2.31zm-116.91-38.1 93.14 14.25L184.15 25.41 35.03 205.63l76.61-13.71c5.5-.21 10.14 4.07 10.35 9.58.82 20.04 5.38 43.32 13.59 67.74 16.81 50 48.78 104.4 95.12 145.47 45.97 40.75 106.26 68.36 179.99 65.33 14.31-.59 29.15-2.33 44.51-5.35-82.24-18.33-133.58-56.41-165.76-102.02-37.56-53.2-48.59-116.17-52.3-169.86l.07-2.41c.81-5.44 5.91-9.2 11.35-8.39z" />
+        </svg>
+      </a>
+    </div>
+  </footer>
   <script src="js/main.js"></script>
 </body>
 
